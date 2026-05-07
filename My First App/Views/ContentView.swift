@@ -23,11 +23,14 @@ struct ContentView: View {
         title: "Design Systems",
         author: "Alla Kholmatova",
         isRead: true
+        
     )
 
     var body: some View {
         Text(myBook.summary)
             .padding()
+        Image(systemName: "star.fill")
+
     }
 }
 #Preview("light Mode") {
